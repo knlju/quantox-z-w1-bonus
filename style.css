@@ -138,7 +138,32 @@ body {
     position: relative;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:1024px) {
+
+    .main-content {
+        padding: 40px 0;
+    }
+
+    .article-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .card-container {
+        border-radius: 1vw;
+    }
+
+    .card-5 {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+
+    .quotation-bg {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width:700px) {
 
     .main-content {
         padding: 70px 25px;
@@ -152,6 +177,7 @@ body {
 
     .card-container {
         border-radius: 2vw;
+        max-width: 400px;
     }
 
     .card-1 {
